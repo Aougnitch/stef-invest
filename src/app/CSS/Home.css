@@ -1,0 +1,126 @@
+.lampcontain, .h1-edit, .topcolor, .sides-color {
+   background-color: rgb(218, 218, 219) !important;
+   
+   font-weight: 600;
+}
+
+.contain-background{
+   
+}
+
+.about-h2{
+   max-width: 80%;
+   font-size: 30px;
+   padding: 2rem 0;
+   font-weight: 600;
+   color: lightslategray;
+}
+
+.about-text{
+   height: 90%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: rgb(218, 218, 219);
+}
+
+
+
+
+.scroll-bar {
+   scrollbar-width: none;
+}
+
+.card-container{
+   background-color: rgb(218, 218, 219); 
+}
+
+.team-container{
+   background-color: rgb(218, 218, 219); 
+   min-width: 100vw;
+   max-height: fit-content;
+
+}
+
+
+.row {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-content: center;
+
+}
+
+.col{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 5rem 7rem;
+   min-width: 50%;
+}
+
+.col-h2, .col-para{
+   font-weight: 600;
+   font-size: 28px;
+   color: lightslategray;
+}
+
+.col-h2{
+   font-size: 40px;
+}
+
+.col-para{
+   
+}
+
+
+
+
+
+/* ANIMATIONS */
+ @keyframes underlineAnimation {
+   0% {
+     width: 0;
+     left: 50%;
+     opacity: 0;
+   }
+   25% {
+     width: 100%;
+     left: 0;
+     opacity: 1;
+   }
+   50% {
+     width: 100%;
+     left: 0;
+     opacity: 1;
+   }
+   75% {
+     width: 100%;
+     left: 0;
+     opacity: 1;
+   }
+   100% {
+     width: 0;
+     left: 50%;
+     opacity: 0;
+   }
+ }
+
+.underlineani{
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .underlineani::after {
+   content: "";
+   position: absolute;
+   left: 50%;
+   bottom: -3px; /* Adjust this value based on your desired distance between text and underline */
+   width: 0;
+   height: 5px; /* Adjust this value based on your desired underline thickness */
+   background-color: rgb(236, 241, 247); /* Change the color as per your requirement */
+   animation: underlineAnimation 6s infinite; /* 2 seconds for each iteration (in-out effect) */
+   animation-fill-mode: both;
+   visibility: visible;
+   transform-origin: center;
+ }
